@@ -1,0 +1,45 @@
+ Create a Book Library App
+
+ * TO-DOs
+
+ - wireframe
+
+ - Design the wireframe in figma.
+
+ - Build the ui in html, css (use tailwind)
+ 
+
+ JAVASCRIPT
+
+ - User can save books locally or connect to cloud.
+    
+- If user save locally, remember their choices as long as its on same device (local storage).
+
+- If user save on cloud, use Firebase to connect their emails with the app so they can sign in
+    on any device and retrieve their catalog.
+
+- user can add books (add an api to initially search for books)
+
+- if book not found, let user add custom books, edit them
+
+- user can delete books
+
+- user can search for books saved
+
+- book information for user to add and display -{title, author, total pages, book read/to-read/reading,
+    favorites}
+
+- (add ratings, how many people rated)  ?
+
+*****************************************   
+
+API Suggestions
+
+Google Books - https://developers.google.com/books/docs/v1/using
+IT Bookstore - https://api.itbook.store/#api-books
+Open library - https://openlibrary.org/dev/docs/api/books
+Goodreads? - https://www.goodreads.com/api
+
+UI Design quick start vid
+https://www.youtube.com/watch?v=c9Wg6Cb_YlU&t=1858s
+https://www.youtube.com/watch?v=gwiX0oASlEw
