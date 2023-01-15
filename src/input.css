@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  svg {
+    @apply w-5 aspect-square;
+  }
+}
+
+/* @layer components {
+} */

@@ -419,6 +419,11 @@ video {
   display: none;
 }
 
+svg {
+  aspect-ratio: 1 / 1;
+  width: 1.25rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -512,3 +517,10 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.border-2 {
+  border-width: 2px;
+}
+
+/* @layer components {
+} */
