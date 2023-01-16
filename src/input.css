@@ -8,5 +8,12 @@
   }
 }
 
-/* @layer components {
-} */
+@layer components {
+  .flex-item {
+    @apply flex gap-4 items-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+}

@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="dist/output.css" />
     <title>Document</title>
   </head>
-  <body>
-    <aside class="side-bar">
-        <div class="side-bar-profile">
-          <div class="profile-image-wrap">
-            <img src="./assets/profile-avater.png" alt="profile picture" class="profile-image"></img>
+  <body class="bg-offWhite">
+    <div class="max-w-[90%] mx-auto pt-10">
+      <aside id="side-bar" class="hidden md:block">
+        <div id="user-profile">
+          <div id="profile-image-wrap">
+            <img
+              src="./assets/profile-avater.png"
+              alt="profile picture"
+              id="profile-image"
+              class="w-20"
+            />
           </div>
           <div class="profile-text-wrap">
             <span>Welcome Back,</span>
-            <span class="user-name">Sarah</span>
+            <span id="user-name" class="font-bold">Sarah</span>
           </div>
         </div>
-        <nav class="sidebar-nav">
+        <nav id="sidebar-nav">
           <ul>
             <li>
               <a href="#">
                 <svg class="all-svgs">
-                  <use
-                    xlink:href="assets/all-svgs.svg#icon-all-books"
-                  ></use>
+                  <use xlink:href="assets/all-svgs.svg#icon-all-books"></use>
                   <span>All Books</span>
                 </svg>
               </a>
@@ -33,9 +37,7 @@
             <li>
               <a href="#">
                 <svg class="all-svgs">
-                  <use
-                    xlink:href="assets/all-svgs.svg#icon-saved"
-                  ></use>
+                  <use xlink:href="assets/all-svgs.svg#icon-saved"></use>
                 </svg>
                 <span>Saved</span>
               </a>
@@ -43,9 +45,7 @@
             <li>
               <a href="#">
                 <svg class="all-svgs">
-                  <use
-                    xlink:href="assets/all-svgs.svg#icon-add"
-                  ></use>
+                  <use xlink:href="assets/all-svgs.svg#icon-add"></use>
                 </svg>
                 <span>Add a Book</span>
               </a>
@@ -53,9 +53,7 @@
             <li>
               <a href="#">
                 <svg class="all-svgs">
-                  <use
-                    xlink:href="assets/all-svgs.svg#icon-edit-profile"
-                  ></use>
+                  <use xlink:href="assets/all-svgs.svg#icon-edit-profile"></use>
                 </svg>
                 <span>Edit Profile</span>
               </a>
@@ -72,135 +70,218 @@
             </li>
           </ul>
         </nav>
-        <div class="logo">
-          <img src="./assets/Vectorlogo.png" alt="logo">
+        <div id="logo">
+          <img src="./assets/Vectorlogo.png" alt="logo" />
         </div>
-    </aside>
-    <main class="main-content">
-      <header>
-        <div class="logo">
-          <img src="./assets/Vectorlogo.png" alt="logo">
-        </div>
-        <div>
-          <input type="text" placeholder="Search my books" class="border-2">
-        </div>
-        <button class="btn">
-          <svg class="all-svgs">
-            <use
-              xlink:href="assets/all-svgs.svg#icon-add"
-            ></use>
-          </svg>
-          <span>Add a Book</span>
-        </button>
-        <button class="btn">
-          <svg class="all-svgs">
-            <use
-              xlink:href="assets/all-svgs.svg#icon-cloud-connect"
-            ></use>
-          </svg>
-          <span>Connect to Cloud</span>
-        </button>
-      </header>
-      <div class="book-recommendations-section">
-        <span>Sarah's recommendation</span>
-        <div class="book-recommendation-card">
-          <div class="book-recommendation-cover | w-36">
-            <img src="./assets/harry-potter.jpg" alt="book poster">
-          </div>
-          <div class="book-recommendation-info">
-            <span class="book-recommendation-title">Harry Potter and the Socerers Stone</span>
-            <span class="book-recommendation-author">By J. K Rolling</span>
-            <div>
-              <span class="book-recommendation-genre">Crime</span>
-              <span class="book-recommendation-pages">193 Pages</span>
-              <span class="book-recommendation-rating">4.8/5</span>
+      </aside>
+      <main id="main-content">
+        <header class="flex-between">
+          <div>
+            <div id="logo" class="w-16">
+              <img src="./assets/Vectorlogo.png" alt="logo" />
             </div>
-          </div>
-        </div>
-        <div class="book-recommendation-card">
-          <div class="book-recommendation-cover | w-36">
-            <img src="./assets/harry-potter.jpg" alt="book poster">
-          </div>
-          <div class="book-recommendation-info">
-            <span class="book-recommendation-title">Harry Potter and the Socerers Stone</span>
-            <span class="book-recommendation-author">By J. K Rolling</span>
-            <div>
-              <span class="book-recommendation-genre">Crime</span>
-              <span class="book-recommendation-pages">193 Pages</span>
-              <span class="book-recommendation-rating">4.8/5</span>
+            <div class="hidden md:block">
+              <input
+                type="text"
+                placeholder="Search my books"
+                class="border-2"
+              />
             </div>
+            <button class="btn hidden md:block">
+              <svg class="all-svgs">
+                <use xlink:href="assets/all-svgs.svg#icon-add"></use>
+              </svg>
+              <span>Add a Book</span>
+            </button>
+            <button class="btn hidden md:block">
+              <svg class="all-svgs">
+                <use xlink:href="assets/all-svgs.svg#icon-cloud-connect"></use>
+              </svg>
+              <span>Connect to Cloud</span>
+            </button>
           </div>
-        </div>
-        <div class="book-recommendation-card">
-          <div class="book-recommendation-cover | w-36">
-            <img src="./assets/harry-potter.jpg" alt="book poster">
-          </div>
-          <div class="book-recommendation-info">
-            <span class="book-recommendation-title">Harry Potter and the Socerers Stone</span>
-            <span class="book-recommendation-author">By J. K Rolling</span>
-            <div>
-              <span class="book-recommendation-genre">Crime</span>
-              <span class="book-recommendation-pages">193 Pages</span>
-              <span class="book-recommendation-rating">4.8/5</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="continue-reading-section">
-        <div class="book-card">
-          <div class="book-cover | w-36">
-            <img src="./assets/glass-hotel.jpg" alt="book poster">
+          <!-- mobile menu -->
+          <div id="mobile-menu" class="block md:hidden">
+            <div>
+              <svg class="all-svgs w-6">
+                <use xlink:href="assets/all-svgs.svg#icon-hamburger"></use>
+              </svg>
+            </div>
+            <nav class="hidden">
+              <ul>
+                <li>
+                  <a href="#">
+                    <svg class="all-svgs">
+                      <use
+                        xlink:href="assets/all-svgs.svg#icon-all-books"
+                      ></use>
+                      <span>All Books</span>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="all-svgs">
+                      <use xlink:href="assets/all-svgs.svg#icon-saved"></use>
+                    </svg>
+                    <span>Saved</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="all-svgs">
+                      <use xlink:href="assets/all-svgs.svg#icon-add"></use>
+                    </svg>
+                    <span>Add a Book</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="all-svgs">
+                      <use
+                        xlink:href="assets/all-svgs.svg#icon-edit-profile"
+                      ></use>
+                    </svg>
+                    <span>Edit Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="all-svgs">
+                      <use
+                        xlink:href="assets/all-svgs.svg#icon-cloud-connect"
+                      ></use>
+                    </svg>
+                    <span>Connect to Cloud</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <span class="boot-title">The Glass Hotel</span>
-          <span class="book-author">J. K Rolling</span>
-          <div>Mystery</div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover | w-36">
-            <img src="./assets/glass-hotel.jpg" alt="book poster">
+        </header>
+        <div id="user-profile-mobile" class="flex-item md:hidden">
+          <div id="profile-image-wrap">
+            <img
+              src="./assets/profile-avater.png"
+              alt="profile picture"
+              id="profile-image"
+              class="w-20"
+            />
           </div>
-          <span class="boot-title">The Glass Hotel</span>
-          <span class="book-author">J. K Rolling</span>
-          <div>Mystery</div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover | w-36">
-            <img src="./assets/glass-hotel.jpg" alt="book poster">
+          <div class="profile-text-wrap">
+            <span>Welcome Back,</span>
+            <span id="user-name" class="font-bold">Sarah</span>
           </div>
-          <span class="boot-title">The Glass Hotel</span>
-          <span class="book-author">J. K Rolling</span>
-          <div>Mystery</div>
         </div>
-      </div>
+        <div class="book-recommendations-section">
+          <span>Sarah's recommendation</span>
+          <div class="book-recommendation-card">
+            <div class="book-recommendation-cover | w-36">
+              <img src="./assets/harry-potter.jpg" alt="book poster" />
+            </div>
+            <div class="book-recommendation-info">
+              <span class="book-recommendation-title"
+                >Harry Potter and the Socerers Stone</span
+              >
+              <span class="book-recommendation-author">By J. K Rolling</span>
+              <div>
+                <span class="book-recommendation-genre">Crime</span>
+                <span class="book-recommendation-pages">193 Pages</span>
+                <span class="book-recommendation-rating">4.8/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="book-recommendation-card">
+            <div class="book-recommendation-cover | w-36">
+              <img src="./assets/harry-potter.jpg" alt="book poster" />
+            </div>
+            <div class="book-recommendation-info">
+              <span class="book-recommendation-title"
+                >Harry Potter and the Socerers Stone</span
+              >
+              <span class="book-recommendation-author">By J. K Rolling</span>
+              <div>
+                <span class="book-recommendation-genre">Crime</span>
+                <span class="book-recommendation-pages">193 Pages</span>
+                <span class="book-recommendation-rating">4.8/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="book-recommendation-card">
+            <div class="book-recommendation-cover | w-36">
+              <img src="./assets/harry-potter.jpg" alt="book poster" />
+            </div>
+            <div class="book-recommendation-info">
+              <span class="book-recommendation-title"
+                >Harry Potter and the Socerers Stone</span
+              >
+              <span class="book-recommendation-author">By J. K Rolling</span>
+              <div>
+                <span class="book-recommendation-genre">Crime</span>
+                <span class="book-recommendation-pages">193 Pages</span>
+                <span class="book-recommendation-rating">4.8/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="read-next-section">
-        <div class="book-card">
-          <div class="book-cover | w-36">
-            <img src="./assets/the-water-dancer.jpg" alt="book poster">
+        <div class="continue-reading-section">
+          <div class="book-card">
+            <div class="book-cover | w-36">
+              <img src="./assets/glass-hotel.jpg" alt="book poster" />
+            </div>
+            <span class="boot-title">The Glass Hotel</span>
+            <span class="book-author">J. K Rolling</span>
+            <div>Mystery</div>
           </div>
-          <span class="boot-title">The Glass Hotel</span>
-          <span class="book-author">J. K Rolling</span>
-          <div>Mystery</div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover | w-36">
-            <img src="./assets/the-water-dancer.jpg" alt="book poster">
+          <div class="book-card">
+            <div class="book-cover | w-36">
+              <img src="./assets/glass-hotel.jpg" alt="book poster" />
+            </div>
+            <span class="boot-title">The Glass Hotel</span>
+            <span class="book-author">J. K Rolling</span>
+            <div>Mystery</div>
           </div>
-          <span class="boot-title">The Glass Hotel</span>
-          <span class="book-author">J. K Rolling</span>
-          <div>Mystery</div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover | w-36">
-            <img src="./assets/the-water-dancer.jpg" alt="book poster">
+          <div class="book-card">
+            <div class="book-cover | w-36">
+              <img src="./assets/glass-hotel.jpg" alt="book poster" />
+            </div>
+            <span class="boot-title">The Glass Hotel</span>
+            <span class="book-author">J. K Rolling</span>
+            <div>Mystery</div>
           </div>
-          <span class="boot-title">The Glass Hotel</span>
-          <span class="book-author">J. K Rolling</span>
-          <div>Mystery</div>
         </div>
-      </div>
-    </main>
+
+        <div class="read-next-section">
+          <div class="book-card">
+            <div class="book-cover | w-36">
+              <img src="./assets/the-water-dancer.jpg" alt="book poster" />
+            </div>
+            <span class="boot-title">The Glass Hotel</span>
+            <span class="book-author">J. K Rolling</span>
+            <div>Mystery</div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover | w-36">
+              <img src="./assets/the-water-dancer.jpg" alt="book poster" />
+            </div>
+            <span class="boot-title">The Glass Hotel</span>
+            <span class="book-author">J. K Rolling</span>
+            <div>Mystery</div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover | w-36">
+              <img src="./assets/the-water-dancer.jpg" alt="book poster" />
+            </div>
+            <span class="boot-title">The Glass Hotel</span>
+            <span class="book-author">J. K Rolling</span>
+            <div>Mystery</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
