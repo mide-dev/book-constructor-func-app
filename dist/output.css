@@ -534,23 +534,8 @@ svg {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.sticky {
-  position: sticky;
-}
-
-.inset-0 {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
 }
 
 .inset-y-0 {
@@ -562,64 +547,12 @@ svg {
   right: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.-left-\[10px\] {
-  left: -10px;
-}
-
-.-left-\[50px\] {
-  left: -50px;
-}
-
-.left-\[50px\] {
-  left: 50px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.-right-10 {
-  right: -2.5rem;
-}
-
-.-right-20 {
-  right: -5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
-.top-40 {
-  top: 10rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.-top-40 {
-  top: -10rem;
+.z-20 {
+  z-index: 20;
 }
 
 .z-10 {
   z-index: 10;
-}
-
-.z-20 {
-  z-index: 20;
 }
 
 .mx-auto {
@@ -627,24 +560,8 @@ svg {
   margin-right: auto;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.block {
-  display: block;
-}
-
-.flex {
-  display: flex;
 }
 
 .hidden {
@@ -653,22 +570,6 @@ svg {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-\[80\%\] {
-  height: 80%;
 }
 
 .w-20 {
@@ -683,53 +584,20 @@ svg {
   width: 1.5rem;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-\[70\%\] {
-  width: 70%;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
 
-.max-w-\[90\%\] {
-  max-width: 90%;
+.w-36 {
+  width: 9rem;
+}
+
+.max-w-\[95\%\] {
+  max-width: 95%;
 }
 
 .border-2 {
   border-width: 2px;
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-offWhite {
@@ -737,21 +605,8 @@ svg {
   background-color: rgb(248 244 241 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .pt-20 {
@@ -784,61 +639,9 @@ svg {
   display: block;
 }
 
-.before\:h-full::before {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.before\:bg-black::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.before\:bg-yellow-200::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
-}
-
-.before\:bg-\[\#CBDCCB\]::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 220 203 / var(--tw-bg-opacity));
-}
-
-.before\:bg-\[\#4646468a\]::before {
-  content: var(--tw-content);
-  background-color: #4646468a;
-}
-
 .before\:bg-\[\#313131a1\]::before {
   content: var(--tw-content);
   background-color: #313131a1;
-}
-
-.after\:fixed::after {
-  content: var(--tw-content);
-  position: fixed;
-}
-
-.after\:inset-0::after {
-  content: var(--tw-content);
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-
-.after\:block::after {
-  content: var(--tw-content);
-  display: block;
-}
-
-.after\:bg-yellow-200::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
