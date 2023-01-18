@@ -10,4 +10,5 @@ hamburger.onclick = () => {
   closeMenu.classList.toggle("hidden");
   mobileNavigationMenu.classList.toggle("hidden");
   mainContent.classList.toggle("fixed");
+  mainContent.classList.toggle("inset-x-[3%]");
 };
