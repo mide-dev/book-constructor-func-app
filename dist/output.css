@@ -532,19 +532,8 @@ svg {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.inset-0 {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
 }
 
 .inset-y-0 {
@@ -552,49 +541,12 @@ svg {
   bottom: 0px;
 }
 
-.inset-x-0 {
-  left: 0px;
-  right: 0px;
+.right-3 {
+  right: 0.75rem;
 }
 
-.inset-x-10 {
-  left: 2.5rem;
-  right: 2.5rem;
-}
-
-.-inset-x-10 {
-  left: -2.5rem;
-  right: -2.5rem;
-}
-
-.inset-x-4 {
-  left: 1rem;
-  right: 1rem;
-}
-
-.inset-x-\[90\%\] {
-  left: 90%;
-  right: 90%;
-}
-
-.inset-x-\[10\%\] {
-  left: 10%;
-  right: 10%;
-}
-
-.inset-x-\[5\%\] {
-  left: 5%;
-  right: 5%;
-}
-
-.inset-x-\[2\%\] {
-  left: 2%;
-  right: 2%;
-}
-
-.inset-x-\[3\%\] {
-  left: 3%;
-  right: 3%;
+.top-\[2\.2rem\] {
+  top: 2.2rem;
 }
 
 .right-0 {
@@ -723,13 +675,17 @@ svg {
   outline-offset: 2px;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 550px) {
+  .sm\:top-\[2\.6rem\] {
+    top: 2.6rem;
+  }
+
   .sm\:block {
     display: block;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   .md\:block {
     display: block;
   }
@@ -740,5 +696,12 @@ svg {
 
   .md\:w-auto {
     width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:page-layout {
+    display: grid;
+    grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
   }
 }

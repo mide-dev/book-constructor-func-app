@@ -16,4 +16,9 @@
   .mobile-menu-width {
     width: min(80%, 300px);
   }
+
+  .page-layout {
+    display: grid;
+    grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
+  }
 }
