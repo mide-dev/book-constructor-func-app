@@ -9,9 +9,9 @@
   </head>
   <body class="bg-offWhite">
     <div class="lg:page-layout |  mx-auto pt-10 pr-6">
-      <aside id="side-bar" class="hidden lg:block ">
-        <div id="user-profile" class=" grid place-content-center mt-2  py-8 relative
-          before:content-[' '] before:bg-blue-300 before:absolute before:inset-0">
+      <aside id="side-bar" class="sidebar-height | hidden lg:flex flex-col justify-between ">
+        <div id="user-profile" class=" grid place-content-center py-8 relative
+          before:content-[' '] before:bg-lightCoffe before:absolute before:inset-0 before:-z-[1] before:rounded-r-3xl">
           <div id="profile-image-wrap">
             <img
               src="./assets/profile-avater.png"
@@ -25,57 +25,57 @@
             <span id="user-name" class="font-bold">Sarah</span>
           </div>
         </div>
-        <nav id="sidebar-nav">
+        <nav id="sidebar-nav" class="ml-4">
           <ul>
-            <li>
-              <a href="#">
+            <li class="mb-4">
+              <a href="#" class="flex-item">
                 <svg class="all-svgs">
                   <use xlink:href="assets/all-svgs.svg#icon-all-books"></use>
                   <span>All Books</span>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="mb-4">
+              <a href="#" class="flex-item">
                 <svg class="all-svgs">
                   <use xlink:href="assets/all-svgs.svg#icon-saved"></use>
                 </svg>
                 <span>Saved</span>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="mb-4">
+              <button class="flex-item">
                 <svg class="all-svgs">
                   <use xlink:href="assets/all-svgs.svg#icon-add"></use>
                 </svg>
                 <span>Add a Book</span>
-              </a>
+              </button>
             </li>
-            <li>
-              <a href="#">
+            <li class="mb-4">
+              <button class="flex-item">
                 <svg class="all-svgs">
                   <use xlink:href="assets/all-svgs.svg#icon-edit-profile"></use>
                 </svg>
                 <span>Edit Profile</span>
-              </a>
+              </button>
             </li>
-            <li>
-              <a href="#">
+            <li class="mb-4">
+              <button class="flex-item shrink-0">
                 <svg class="all-svgs">
                   <use
                     xlink:href="assets/all-svgs.svg#icon-cloud-connect"
                   ></use>
                 </svg>
                 <span>Connect to Cloud</span>
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
-        <div id="logo" class="w-16">
+        <div id="logo" class="w-16 ml-4">
           <img src="./assets/Vectorlogo.png" alt="logo" />
         </div>
       </aside>
-      <main id="main-content">
+      <main id="main-content" class="content-height overflow-auto">
         <header class="flex items-center justify-between gap-x-8">
           <div id="logo" class="w-16">
             <img src="./assets/Vectorlogo.png" alt="logo" />
