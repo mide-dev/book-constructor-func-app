@@ -532,6 +532,10 @@ svg {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -541,16 +545,21 @@ svg {
   bottom: 0px;
 }
 
+.inset-x-\[3\%\] {
+  left: 3%;
+  right: 3%;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .right-3 {
   right: 0.75rem;
 }
 
 .top-\[2\.2rem\] {
   top: 2.2rem;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-20 {
@@ -610,6 +619,10 @@ svg {
   width: 9rem;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .max-w-\[95\%\] {
   max-width: 95%;
 }
@@ -624,6 +637,15 @@ svg {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-offWhite {
@@ -641,6 +663,14 @@ svg {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .font-bold {
@@ -676,26 +706,18 @@ svg {
 }
 
 @media (min-width: 550px) {
-  .sm\:top-\[2\.6rem\] {
-    top: 2.6rem;
-  }
-
   .sm\:block {
     display: block;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
   }
 }
 
