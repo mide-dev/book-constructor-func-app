@@ -524,16 +524,28 @@ svg {
   gap: 0.5rem;
 }
 
+.btn-primary {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 225 211 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .mobile-menu-width {
   width: min(80%, 300px);
 }
 
 .fixed {
   position: fixed;
-}
-
-.absolute {
-  position: absolute;
 }
 
 .relative {
@@ -545,21 +557,8 @@ svg {
   bottom: 0px;
 }
 
-.inset-x-\[3\%\] {
-  left: 3%;
-  right: 3%;
-}
-
 .right-0 {
   right: 0px;
-}
-
-.right-3 {
-  right: 0.75rem;
-}
-
-.top-\[2\.2rem\] {
-  top: 2.2rem;
 }
 
 .z-20 {
@@ -619,12 +618,12 @@ svg {
   width: 9rem;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .max-w-\[95\%\] {
   max-width: 95%;
+}
+
+.shrink {
+  flex-shrink: 1;
 }
 
 .items-center {
@@ -635,17 +634,18 @@ svg {
   justify-content: space-between;
 }
 
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-offWhite {
@@ -663,14 +663,6 @@ svg {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .font-bold {
@@ -706,18 +698,8 @@ svg {
 }
 
 @media (min-width: 550px) {
-  .sm\:block {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:w-auto {
-    width: auto;
-  }
-
-  .md\:pt-10 {
-    padding-top: 2.5rem;
+  .sm\:flex {
+    display: flex;
   }
 }
 
@@ -729,6 +711,10 @@ svg {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:hidden {

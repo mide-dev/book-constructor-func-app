@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       colors: {
         offWhite: "#F8F4F1",
+        lightCoffe: "#EBE1D3",
       },
     },
   },
