@@ -5,6 +5,7 @@
 @layer base {
   html {
     font-family: "Poppins", sans-serif;
+    color: #403f3f;
   }
   svg {
     @apply w-5 aspect-square;
@@ -17,7 +18,7 @@
   }
 
   .btn-primary {
-    @apply bg-lightCoffe rounded-full flex gap-2 items-center py-2 px-4 text-sm shrink-0;
+    @apply bg-lightCoffe rounded-full flex gap-2 items-center py-2 px-4 text-sm font-[500] shrink-0;
   }
 
   .mobile-menu-width {
