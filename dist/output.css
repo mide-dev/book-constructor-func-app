@@ -544,16 +544,12 @@ svg {
   width: min(80%, 300px);
 }
 
-.sidebar-height {
-  max-height: calc(97vh - 2.5rem);
-}
-
-.content-height {
-  max-height: calc(100vh - 2.5rem);
-}
-
 .fixed {
   position: fixed;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .relative {
@@ -567,6 +563,10 @@ svg {
 
 .right-0 {
   right: 0px;
+}
+
+.right-10 {
+  right: 2.5rem;
 }
 
 .z-20 {
@@ -642,6 +642,10 @@ svg {
   width: 9rem;
 }
 
+.max-w-\[95\%\] {
+  max-width: 95%;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -676,12 +680,17 @@ svg {
        column-gap: 1.5rem;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-offWhite {
@@ -701,10 +710,6 @@ svg {
 
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
 }
 
 .pl-4 {
@@ -727,6 +732,11 @@ svg {
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
+}
+
+.before\:relative::before {
+  content: var(--tw-content);
+  position: relative;
 }
 
 .before\:inset-0::before {
@@ -776,6 +786,14 @@ svg {
 }
 
 @media (min-width: 1024px) {
+  .lg\:sidebar-height {
+    max-height: calc(97vh - 2.5rem);
+  }
+
+  .lg\:content-height {
+    max-height: calc(100vh - 2.5rem);
+  }
+
   .lg\:page-layout {
     display: grid;
     grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
@@ -788,5 +806,17 @@ svg {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
+  }
+
+  .lg\:overflow-auto {
+    overflow: auto;
+  }
+
+  .lg\:pr-6 {
+    padding-right: 1.5rem;
   }
 }
