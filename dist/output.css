@@ -584,12 +584,24 @@ svg {
   margin-left: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .block {
@@ -664,8 +676,16 @@ svg {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-y-12 {
@@ -684,6 +704,15 @@ svg {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-offWhite {
@@ -716,6 +745,14 @@ svg {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-bold {
@@ -773,8 +810,26 @@ svg {
 }
 
 @media (min-width: 550px) {
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:w-24 {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
 }
 

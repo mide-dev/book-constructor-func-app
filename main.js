@@ -13,8 +13,8 @@ hamburger.onclick = () => {
   // show/hide menu content
   mobileNavigationMenu.classList.toggle("hidden");
 
-  // prevent page scrolling while menu is open
-  // mainContent.classList.toggle("inset-x-[3%]");
+  // // prevent page scrolling while menu is open
   // mainContent.classList.toggle("fixed");
+  // mainContent.classList.toggle("inset-x-px");
 };
 //

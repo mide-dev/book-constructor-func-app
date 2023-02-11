@@ -15,7 +15,7 @@
     <div class="lg:page-layout |  mx-auto max-w-[95%] lg:max-w-full pt-10 lg:pr-6">
       <aside id="side-bar" class="lg:sidebar-height | hidden lg:flex flex-col justify-between ">
         <div class="flex flex-col gap-y-12">
-          <div id="user-profile" class=" grid place-content-center py-8 relative
+          <div id="user-profile" class="grid place-content-center py-8 relative
             before:content-[' '] before:bg-lightCoffe before:absolute before:inset-0 before:-z-[1] before:rounded-r-3xl">
             <div id="profile-image-wrap">
               <img
@@ -25,14 +25,14 @@
                 class="w-20"
               />
             </div>
-            <div class="profile-text-wrap">
+            <div id="profile-text-wrap">
               <span class="block py-2">Welcome </br> Back,</span>
-              <span id="user-name" class="font-bold">Sarah</span>
+              <span id="user-name" class="font-semibold">Sarah</span>
             </div>
           </div>
-          <nav id="sidebar-nav" class="ml-4">
+          <nav id="sidebar-nav" class="ml-4 font-normal">
             <ul>
-              <li class="mb-4">
+              <li class="mb-6">
                 <a href="#" class="flex-item">
                   <svg class="all-svgs">
                     <use xlink:href="assets/all-svgs.svg#icon-all-books"></use>
@@ -40,7 +40,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="mb-4">
+              <li class="mb-6">
                 <a href="#" class="flex-item">
                   <svg class="all-svgs">
                     <use xlink:href="assets/all-svgs.svg#icon-saved"></use>
@@ -48,7 +48,7 @@
                   <span>Saved</span>
                 </a>
               </li>
-              <li class="mb-4">
+              <li class="mb-6">
                 <button class="flex-item">
                   <svg class="all-svgs">
                     <use xlink:href="assets/all-svgs.svg#icon-add"></use>
@@ -56,7 +56,7 @@
                   <span>Add a Book</span>
                 </button>
               </li>
-              <li class="mb-4">
+              <li class="mb-6">
                 <button class="flex-item">
                   <svg class="all-svgs">
                     <use xlink:href="assets/all-svgs.svg#icon-edit-profile"></use>
@@ -81,7 +81,7 @@
           <img src="./assets/Vectorlogo.png" alt="logo" />
         </div>
       </aside>
-      <main id="main-content" >
+      <main id="main-content">
         <header class="flex items-center justify-between gap-x-8" >
           <div id="logo" class="w-16">
             <img src="./assets/Vectorlogo.png" alt="logo" />
@@ -109,7 +109,7 @@
           </div>
 
           <!-- mobile menu -->
-          <div id="mobile-menu" class="lg:hidden relative ">
+          <div id="mobile-menu" class="lg:hidden">
             <button id="hamburger" class="relative z-20">
               <svg id="menu-open" class="all-svgs w-6">
                 <use xlink:href="assets/all-svgs.svg#icon-hamburger"></use>
@@ -120,7 +120,7 @@
             </button>
             <nav
               id="mobile-nav"
-              class="hidden before:block before:fixed before:inset-0 before:bg-[#313131a1] before:z-5"
+              class="hidden  before:block before:fixed before:inset-0 before:bg-[#313131a1] before:z-5"
             >
               <ul
                 class="mobile-menu-width | fixed bg-offWhite h-full right-0 inset-y-0 z-10 pt-20 pl-4"
@@ -175,18 +175,18 @@
             </nav>
           </div>
         </header>
-        <div id="user-profile-mobile" class="flex-item lg:hidden">
+        <div id="user-profile-mobile" class="flex-item | lg:hidden gap-4 justify-center mt-10 sm:mt-16">
           <div id="profile-image-wrap">
             <img
               src="./assets/profile-avater.png"
               alt="profile picture"
               id="profile-image"
-              class="w-20"
+              class="w-20 sm:w-24"
             />
           </div>
-          <div class="profile-text-wrap">
-            <span>Welcome Back,</span>
-            <span id="user-name" class="font-bold">Sarah</span>
+          <div id="profile-text-wrap">
+            <span class="block py-2">Welcome </br> Back,</span>
+            <span id="user-name" class="font-semibold">Sarah</span>
           </div>
         </div>
         <div class="book-recommendations-section">
