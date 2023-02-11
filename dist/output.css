@@ -419,6 +419,10 @@ video {
   display: none;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 svg {
   aspect-ratio: 1 / 1;
   width: 1.25rem;
@@ -548,10 +552,6 @@ svg {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -563,10 +563,6 @@ svg {
 
 .right-0 {
   right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
 }
 
 .z-20 {
@@ -670,6 +666,10 @@ svg {
   justify-content: space-between;
 }
 
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
@@ -682,15 +682,6 @@ svg {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-offWhite {
@@ -724,6 +715,26 @@ svg {
   font-weight: 700;
 }
 
+.placeholder\:text-sm::-moz-placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm::placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-xs::-moz-placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:text-xs::placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .before\:fixed::before {
   content: var(--tw-content);
   position: fixed;
@@ -732,11 +743,6 @@ svg {
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
-}
-
-.before\:relative::before {
-  content: var(--tw-content);
-  position: relative;
 }
 
 .before\:inset-0::before {
@@ -790,10 +796,6 @@ svg {
     max-height: calc(97vh - 2.5rem);
   }
 
-  .lg\:content-height {
-    max-height: calc(100vh - 2.5rem);
-  }
-
   .lg\:page-layout {
     display: grid;
     grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
@@ -810,10 +812,6 @@ svg {
 
   .lg\:max-w-full {
     max-width: 100%;
-  }
-
-  .lg\:overflow-auto {
-    overflow: auto;
   }
 
   .lg\:pr-6 {

@@ -12,10 +12,14 @@ module.exports = {
       lg: { min: "1024px" },
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
     },
+
     extend: {
       colors: {
         offWhite: "#F8F4F1",
         lightCoffe: "#EBE1D3",
+      },
+      fontFamily: {
+        Poppins: ["Poppins", "serif"],
       },
     },
   },

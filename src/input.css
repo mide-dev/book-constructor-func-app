@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
   svg {
     @apply w-5 aspect-square;
   }

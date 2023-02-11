@@ -4,73 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css" />
+
   </head>
   <body class="bg-offWhite">
     <div class="lg:page-layout |  mx-auto max-w-[95%] lg:max-w-full pt-10 lg:pr-6">
       <aside id="side-bar" class="lg:sidebar-height | hidden lg:flex flex-col justify-between ">
-        <div id="user-profile" class=" grid place-content-center py-8 relative
-          before:content-[' '] before:bg-lightCoffe before:absolute before:inset-0 before:-z-[1] before:rounded-r-3xl">
-          <div id="profile-image-wrap">
-            <img
-              src="./assets/profile-avater.png"
-              alt="profile picture"
-              id="profile-image"
-              class="w-20"
-            />
+        <div class="flex flex-col gap-y-12">
+          <div id="user-profile" class=" grid place-content-center py-8 relative
+            before:content-[' '] before:bg-lightCoffe before:absolute before:inset-0 before:-z-[1] before:rounded-r-3xl">
+            <div id="profile-image-wrap">
+              <img
+                src="./assets/profile-avater.png"
+                alt="profile picture"
+                id="profile-image"
+                class="w-20"
+              />
+            </div>
+            <div class="profile-text-wrap">
+              <span class="block py-2">Welcome </br> Back,</span>
+              <span id="user-name" class="font-bold">Sarah</span>
+            </div>
           </div>
-          <div class="profile-text-wrap">
-            <span class="block py-2">Welcome </br> Back,</span>
-            <span id="user-name" class="font-bold">Sarah</span>
-          </div>
+          <nav id="sidebar-nav" class="ml-4">
+            <ul>
+              <li class="mb-4">
+                <a href="#" class="flex-item">
+                  <svg class="all-svgs">
+                    <use xlink:href="assets/all-svgs.svg#icon-all-books"></use>
+                    <span>All Books</span>
+                  </svg>
+                </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="flex-item">
+                  <svg class="all-svgs">
+                    <use xlink:href="assets/all-svgs.svg#icon-saved"></use>
+                  </svg>
+                  <span>Saved</span>
+                </a>
+              </li>
+              <li class="mb-4">
+                <button class="flex-item">
+                  <svg class="all-svgs">
+                    <use xlink:href="assets/all-svgs.svg#icon-add"></use>
+                  </svg>
+                  <span>Add a Book</span>
+                </button>
+              </li>
+              <li class="mb-4">
+                <button class="flex-item">
+                  <svg class="all-svgs">
+                    <use xlink:href="assets/all-svgs.svg#icon-edit-profile"></use>
+                  </svg>
+                  <span>Edit Profile</span>
+                </button>
+              </li>
+              <li class="mb-4">
+                <button class="flex-item shrink-0">
+                  <svg class="all-svgs">
+                    <use
+                      xlink:href="assets/all-svgs.svg#icon-cloud-connect"
+                    ></use>
+                  </svg>
+                  <span>Connect to Cloud</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav id="sidebar-nav" class="ml-4">
-          <ul>
-            <li class="mb-4">
-              <a href="#" class="flex-item">
-                <svg class="all-svgs">
-                  <use xlink:href="assets/all-svgs.svg#icon-all-books"></use>
-                  <span>All Books</span>
-                </svg>
-              </a>
-            </li>
-            <li class="mb-4">
-              <a href="#" class="flex-item">
-                <svg class="all-svgs">
-                  <use xlink:href="assets/all-svgs.svg#icon-saved"></use>
-                </svg>
-                <span>Saved</span>
-              </a>
-            </li>
-            <li class="mb-4">
-              <button class="flex-item">
-                <svg class="all-svgs">
-                  <use xlink:href="assets/all-svgs.svg#icon-add"></use>
-                </svg>
-                <span>Add a Book</span>
-              </button>
-            </li>
-            <li class="mb-4">
-              <button class="flex-item">
-                <svg class="all-svgs">
-                  <use xlink:href="assets/all-svgs.svg#icon-edit-profile"></use>
-                </svg>
-                <span>Edit Profile</span>
-              </button>
-            </li>
-            <li class="mb-4">
-              <button class="flex-item shrink-0">
-                <svg class="all-svgs">
-                  <use
-                    xlink:href="assets/all-svgs.svg#icon-cloud-connect"
-                  ></use>
-                </svg>
-                <span>Connect to Cloud</span>
-              </button>
-            </li>
-          </ul>
-        </nav>
         <div id="logo" class="w-16 ml-4">
           <img src="./assets/Vectorlogo.png" alt="logo" />
         </div>
@@ -84,7 +90,7 @@
             <input
               type="text"
               placeholder="Search my books"
-              class="w-full h-8 rounded-full pl-4 focus:outline-none"
+              class="w-full h-8 rounded-full pl-4 focus:outline-none placeholder:text-xs"
             />
           </div>
           <div class="hidden lg:flex gap-x-6">
